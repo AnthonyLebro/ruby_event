@@ -6,10 +6,11 @@ Bundler.require
 # comme ça, tu peux faire User.new dans ce fichier d'application. Top.
 require_relative 'lib/user'
 require_relative 'lib/event'
+require_relative 'lib/event_creator'
 
-binding.pry
-puts "voila voila"
 
 
 # Maintenant c'est open bar pour tester ton application. Tous les fichiers importants sont chargés
 # Tu peux faire User.new, Event.new, binding.pry, User.all, etc.
+event_creator1=EventCreator.new()
+event_creator1.get_the_name

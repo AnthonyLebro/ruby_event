@@ -20,6 +20,15 @@ class User
     return @@user_count
   end
 
+  def self.find_by_email(email_to_find)
+    @@all_users.each do |user|
+      if user.instance_variable_get("@email")==email_to_find
+        return user
+      end
+    end
+    return puts "Pas d'utilisateur avec cette adresse email"
+  end
+
 #binding.pry
 #puts "voila voila"
 end
