@@ -13,4 +13,3 @@ require_relative 'lib/event_creator'
 # Maintenant c'est open bar pour tester ton application. Tous les fichiers importants sont chargés
 # Tu peux faire User.new, Event.new, binding.pry, User.all, etc.
 event_creator1=EventCreator.new()
-event_creator1.get_the_name
