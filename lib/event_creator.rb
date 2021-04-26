@@ -38,7 +38,7 @@ class EventCreator
     end
   
     def create_event()
-      new_event=Event.new(@start_date, @duration, @title, @attendees)
+      new_event=Event.new(@start_date, @attendees, @duration, @title)
       new_event.to_s
     end
   

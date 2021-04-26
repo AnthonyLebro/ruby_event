@@ -3,7 +3,7 @@ class Event
 
   def initialize(start_date, attendees, duration, title)
     @start_date = Time.parse(start_date) #année/mois/jour
-    @attendees = attendees.to_a 
+    @attendees = attendees.to_a
     @duration = duration.to_i #30 (min)
     @title = title.to_s
   end
@@ -25,14 +25,14 @@ class Event
   end
 
   def is_soon
-    @star_date > Time.now +30 * 60
+    @star_date > Time.now + 30 * 60
   end
 
   def to_s
     puts "> Titre : #{@title} <"
     puts "> Date du début : #{@start_date} <"
     puts "> Durée : #{@duration} <"
-    puts "> Invité(s) : #{@attendies.join(", ")} <"
+    puts "> Invité(s) : #{@attendees.join(', ')} <"
   end
 
 end
